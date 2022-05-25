@@ -7,10 +7,16 @@
 
 import SwiftUI
 
-struct SliderValue: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct SliderValue: UIViewRepresentable {
+    
+    func makeUIView(context: Context) -> UISlider {
+        <#code#>
     }
+    
+    func updateUIView(_ uiView: UISlider, context: Context) {
+        <#code#>
+    }
+    
 }
 
 struct SliderValue_Previews: PreviewProvider {
