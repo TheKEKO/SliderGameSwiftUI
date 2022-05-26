@@ -21,7 +21,6 @@ struct ContentView: View {
                 color: .red,
                 alpha: computeScore()
             )
-            
             Button("Проверь меня!") {
                 alert = true
             }
@@ -29,7 +28,6 @@ struct ContentView: View {
             .alert("Your Score", isPresented: $alert, actions: {}) {
                 Text("\(computeScore())")
             }
-            
             Button("Начать заново") {
                 targetValue = Int.random(in: 1...100)
             }
