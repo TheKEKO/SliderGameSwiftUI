@@ -26,7 +26,6 @@ struct SliderValue: UIViewRepresentable {
         )
         
         return slider
-        
     }
     
     func updateUIView(_ uiView: UISlider, context: Context) {

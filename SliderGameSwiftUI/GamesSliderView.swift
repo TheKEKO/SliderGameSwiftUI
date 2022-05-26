@@ -10,9 +10,11 @@ import SwiftUI
 struct GamesSliderView: View {
     
     @Binding var currentValue: Double
+    
     let targetValue: Int
     let color: UIColor
     let alpha: Int
+    
     var body: some View {
         VStack {
             Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
