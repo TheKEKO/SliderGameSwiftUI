@@ -10,51 +10,34 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var targetValue = Int.random(in: 0...100)
-    @State private var currentValue: Float = 50.0
-    @State private var alpha: CGFloat = 0
+    @State private var currentValue = 50.0
     @State private var alert = false
     
     var body: some View {
         VStack {
-            Text("Подвинь слайдер, как можно ближе к: \(targetValue)")
-                .padding()
-            
-            HStack{
-                Text("1")
-                SliderValue(sliderValue: $currentValue, alpha: $alpha)
-                Text("100")
-            }
-            .onChange(of: currentValue) {
-                value in currentValue = Float(Int(value))
-                alphaValue()
-            }
-            .onAppear { alphaValue() }
-            .padding()
+            GamesSliderView(
+                currentValue: $currentValue,
+                targetValue: targetValue,
+                color: .red,
+                alpha: computeScore()
+            )
             
             Button("Проверь меня!") {
-                alert.toggle()
-            }
-            .alert(isPresented: $alert) {
-                Alert(
-                    title: Text ("Your Score"),
-                    message: Text("\(computeScore())"),
-                    dismissButton: .cancel()
-                )
+                alert = true
             }
             .padding()
+            .alert("Your Score", isPresented: $alert, actions: {}) {
+                Text("\(computeScore())")
+            }
+            
             Button("Начать заново") {
                 targetValue = Int.random(in: 1...100)
-                alphaValue()
             }
         }
     }
     
-    private func alphaValue() {
-        alpha = CGFloat(computeScore())
-    }
-    
     private func computeScore() -> Int {
-        let difference = abs(targetValue - lround(Double(currentValue)))
+        let difference = abs(targetValue - lround(currentValue))
         return 100 - difference
     }
 }
