@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct GamesSliderView: View {
+    
+    @Binding var currentValue: Double
+    let targetValue: Int
+    let color: UIColor
+    let alpha: Int
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
+            HStack {
+                Text("0")
+                SliderValue(value: $currentValue, alpha: alpha, color: color)
+                Text("100")
+            }
+            .padding()
+        }
     }
 }
 
 struct GamesSliderView_Previews: PreviewProvider {
     static var previews: some View {
-        GamesSliderView()
+        GamesSliderView(
+            currentValue: .constant(50),
+            targetValue: 100,
+            color: .red,
+            alpha: 100
+        )
     }
 }
