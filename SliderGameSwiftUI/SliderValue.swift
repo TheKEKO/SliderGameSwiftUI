@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SliderValue: UIViewRepresentable {
-    
     @Binding var value: Double
     
     let alpha: Int

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @State private var targetValue = Int.random(in: 0...100)
     @State private var currentValue = 50.0
     @State private var alert = false

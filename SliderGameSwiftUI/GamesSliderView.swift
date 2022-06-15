@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct GamesSliderView: View {
-    
     @Binding var currentValue: Double
     
     let targetValue: Int
