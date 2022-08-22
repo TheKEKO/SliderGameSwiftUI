@@ -11,7 +11,7 @@
 		D467F2E6283D2FE7007323F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F2E5283D2FE7007323F5 /* ContentView.swift */; };
 		D467F2E8283D2FE8007323F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D467F2E7283D2FE8007323F5 /* Assets.xcassets */; };
 		D467F2EB283D2FE8007323F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D467F2EA283D2FE8007323F5 /* Preview Assets.xcassets */; };
-		D4A85042283D9C2E0069BD5C /* SliderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A85041283D9C2E0069BD5C /* SliderValue.swift */; };
+		D4A85042283D9C2E0069BD5C /* CustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A85041283D9C2E0069BD5C /* CustomSliderView.swift */; };
 		D4E08ABF283F6F1A00F60F43 /* GamesSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E08ABE283F6F1A00F60F43 /* GamesSliderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +21,7 @@
 		D467F2E5283D2FE7007323F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D467F2E7283D2FE8007323F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D467F2EA283D2FE8007323F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D4A85041283D9C2E0069BD5C /* SliderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderValue.swift; sourceTree = "<group>"; };
+		D4A85041283D9C2E0069BD5C /* CustomSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderView.swift; sourceTree = "<group>"; };
 		D4E08ABE283F6F1A00F60F43 /* GamesSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesSliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +57,7 @@
 			children = (
 				D467F2E3283D2FE7007323F5 /* SliderGameSwiftUIApp.swift */,
 				D467F2E5283D2FE7007323F5 /* ContentView.swift */,
-				D4A85041283D9C2E0069BD5C /* SliderValue.swift */,
+				D4A85041283D9C2E0069BD5C /* CustomSliderView.swift */,
 				D4E08ABE283F6F1A00F60F43 /* GamesSliderView.swift */,
 				D467F2E7283D2FE8007323F5 /* Assets.xcassets */,
 				D467F2E9283D2FE8007323F5 /* Preview Content */,
@@ -144,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D467F2E6283D2FE7007323F5 /* ContentView.swift in Sources */,
-				D4A85042283D9C2E0069BD5C /* SliderValue.swift in Sources */,
+				D4A85042283D9C2E0069BD5C /* CustomSliderView.swift in Sources */,
 				D467F2E4283D2FE7007323F5 /* SliderGameSwiftUIApp.swift in Sources */,
 				D4E08ABF283F6F1A00F60F43 /* GamesSliderView.swift in Sources */,
 			);

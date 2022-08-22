@@ -19,7 +19,7 @@ struct GamesSliderView: View {
             Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
             HStack {
                 Text("0")
-                SliderValue(value: $currentValue, alpha: alpha, color: color)
+                CustomSliderView(value: $currentValue, alpha: alpha, color: color)
                 Text("100")
             }
             .padding()
