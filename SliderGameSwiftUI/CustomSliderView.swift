@@ -12,7 +12,7 @@ struct CustomSliderView: UIViewRepresentable {
     
     let alpha: Int
     let color: UIColor
-
+    
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
         slider.minimumValue = 1
